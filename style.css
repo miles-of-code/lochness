@@ -132,6 +132,10 @@ p {
       text-align: justify;
     }
 
+    .reviewSource {
+      font-size: 0.9rem;
+    }
+
     #review2 {
       grid-row: 4;
     }

@@ -23,11 +23,12 @@ html, body {
   min-width: 1024px;
   z-index: -1;
   background-position: right;
+  filter: sepia(0.3);
 }
 
 .header {
   display: grid;
-  background: url('./img/greennessieheader.png');
+  background: url('./img/noeyes.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -49,28 +50,36 @@ html, body {
 
   .nessieButton {
     position: absolute;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: white;
-    font-weight: bolder;
+    font-weight: 400;
+    width: max-content;
+    height: 60px;
   }
 
     .nessieButton:hover {
       cursor: pointer;
+      font-weight: 900;
     }
 
-    #home {
-      left: 250px;
+    .headerLink {
+      display: block;
+      width: 0;
+    }
+
+    #preorder {
+      left: 240px;
       top: 90px;
     }
 
-    #buy {
-      left: 390px;
-      top: 105px;
+    #more {
+      left: 370px;
+      top: 100px;
     }
 
-    #more {
-      left: 560px;
-      top: 120px;
+    #gallery {
+      left: 558px;
+      top: 110px;
     }
 
 
@@ -100,5 +109,5 @@ html, body {
     align-self: center;
     justify-self: center;
     grid-row: 2;
-    border: 5pt solid var(--green);
+    border: 2pt solid var(--green);
   }

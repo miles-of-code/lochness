@@ -22,18 +22,17 @@ html, body {
   background-position: center;
   width: 100%;
   max-width: 600px;
-  height: 0;
-  padding-bottom: 21.5%;
+  height: 180px;
   justify-self: center;
   grid-row: 2;
   grid-column: 1;
   z-index: 1;
   transition: transform 5s;
-  transform: translateY(0px)
+  transform: translateY(40px);
 }
 
   .header:hover {
-    transform: translateY(-40px)
+    transform: translateY(20px);
   }
 
 .main {
@@ -58,6 +57,10 @@ html, body {
     background: url('./img/book.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    width: 500px;
-    height: auto;
+    width: 100%;
+    max-width: 500px;
+    height: 0;
+    padding-bottom: 100%;
+    align-self: center;
+    justify-self: center;
   }

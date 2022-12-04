@@ -1,35 +1,63 @@
-body {
-  background: url('./img/water4.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
+html, body {
+  margin: 0;
 }
 
 .container {
   display: grid;
+  grid-template-rows: 50px 1fr;
+  background: url(./img/water4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-width: 1024px;
+  z-index: -1;
 }
 
 .header {
-  width: 100vw;
-  height: 200px;
   display: grid;
+  background: url('./img/greennessieheader.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  max-width: 600px;
+  height: 0;
+  padding-bottom: 21.5%;
+  justify-self: center;
+  grid-row: 2;
+  grid-column: 1;
+  z-index: 1;
+  transition: transform 5s;
+  transform: translateY(0px)
 }
 
-  .headerImg {
-    background: url('./img/nessieheader.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+  .header:hover {
+    transform: translateY(-40px)
   }
 
 .main {
-  background-image: url('./img/map.png');
+  display: grid;
+  background-image: url('./img/flipped.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  filter: hue-rotate(183deg);
-  margin: 0 15% 0 15%;
-  height: 800px;
+  background-size: contain;
+  z-index: 2;
+  justify-self: center;
+  grid-row: 2;
+  grid-column: 1;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  height: 0;
+  padding-bottom: 109.5%;
+  margin-top: 160px;
 }
+
+  .cover {
+    background: url('./img/book.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 500px;
+    height: auto;
+  }

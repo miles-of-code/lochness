@@ -12,6 +12,10 @@ html, body {
   font-family: Georgia, 'Times New Roman', Times, serif
 }
 
+p {
+  margin: 10px
+}
+
 .container {
   display: grid;
   grid-template-rows: 50px 1fr;

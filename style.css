@@ -1,0 +1,35 @@
+body {
+  background: url('./img/water4.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  display: grid;
+}
+
+.header {
+  width: 100vw;
+  height: 200px;
+  display: grid;
+}
+
+  .headerImg {
+    background: url('./img/nessieheader.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+.main {
+  background-image: url('./img/map.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  filter: hue-rotate(183deg);
+  margin: 0 15% 0 15%;
+  height: 800px;
+}

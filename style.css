@@ -9,7 +9,7 @@
 
 html, body {
   margin: 0;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 .container {
@@ -79,14 +79,14 @@ html, body {
     }
 
     #gallery {
-      left: 558px;
+      left: 540px;
       top: 110px;
     }
 
 
 .main {
   display: grid;
-  grid-template-rows: 120px 300px 1fr 1fr;
+  grid-template-rows: 120px 300px 180px 140px;
   background-image: url('./img/flipped.png');
   background-repeat: no-repeat;
   background-size: contain;

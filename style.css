@@ -9,7 +9,7 @@
 
 html, body {
   margin: 0;
-  font-family: elsie;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 .container {
@@ -28,7 +28,7 @@ html, body {
 
 .header {
   display: grid;
-  background: url('./img/noeyes.png');
+  background: url('./img/nessie.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -55,6 +55,7 @@ html, body {
     font-weight: 400;
     width: max-content;
     height: 60px;
+    font-family: elsie;
   }
 
     .nessieButton:hover {
@@ -85,7 +86,7 @@ html, body {
 
 .main {
   display: grid;
-  grid-template-rows: 100px 300px;
+  grid-template-rows: 120px 300px 1fr 1fr;
   background-image: url('./img/flipped.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -94,7 +95,7 @@ html, body {
   grid-row: 2;
   grid-column: 1;
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   height: 0;
   padding-bottom: 109.5%;
   margin-top: 80px;
@@ -110,4 +111,24 @@ html, body {
     justify-self: center;
     grid-row: 2;
     border: 2pt solid var(--green);
+    filter: sepia(0.8);
+    transition: filter 2s ease;
   }
+
+    .cover:hover {
+      filter: sepia(0);
+      cursor: pointer;
+    }
+
+    .review {
+      width: 450px;
+      justify-self: center;
+      height: max-content;
+      grid-row: 3;
+      text-align: justify;
+    }
+
+    #review2 {
+      grid-row: 4;
+    }
+    

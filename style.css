@@ -130,6 +130,7 @@ body {
     #notes {
       width: 240px;
       height: 85px;
+      align-self: end;
     }
 
       .silent {

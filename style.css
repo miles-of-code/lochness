@@ -91,6 +91,7 @@ p {
 .main {
   display: grid;
   grid-template-rows: 120px 300px 200px 150px;
+  grid-template-columns: 800px 1fr;
   background-image: url('./img/flipped.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -104,6 +105,36 @@ p {
   padding-bottom: 109.5%;
   margin-top: 80px;
 }
+
+  .phonographCont {
+    display: grid;
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+    #phonograph {
+      width: 250px;
+      height: 250px;
+      transform: rotateY(180deg);
+      transition: transform 0.3s ease;
+    }
+
+    #phonograph:hover {
+      transform: rotateY(180deg) scale(1.1);
+    }
+
+    #notes {
+      width: 240px;
+      height: 85px;
+    }
+
+      .silent {
+        opacity: 0;
+      }
+
+      .playing {
+        opacity: 1;
+      }
 
   .cover {
     background: url('./img/book.jpg');

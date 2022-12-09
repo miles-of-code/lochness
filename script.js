@@ -13,3 +13,17 @@ let notes = document.getElementById('notes');
 let nessieSong = document.getElementById('nessieSong');
 nessieSong.loop = true;
 phonograph.addEventListener('click', playSong);
+
+
+const nessie = document.getElementById('nessie');
+const kiss = document.getElementById('kiss');
+const kissSound = document.getElementById('kissSound');
+nessie.addEventListener('click', () => {
+  kiss.classList.add('action');
+  kissSound.load();
+  kissSound.play();
+  setTimeout(() => {
+    kiss.classList.remove('action');
+  },1000)
+})
+
